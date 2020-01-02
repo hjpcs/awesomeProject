@@ -1,0 +1,7 @@
+package: ch25/unit_test
+import: []
+testImport:
+- package: github.com/stretchr/testify
+  version: v1.4.0
+  subpackages:
+  - assert
