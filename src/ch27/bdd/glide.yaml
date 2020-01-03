@@ -1,0 +1,7 @@
+package: ch27/bdd
+import: []
+testImport:
+- package: github.com/smartystreets/goconvey
+  version: v1.6.4
+- package: github.com/jtolds/gls
+  version: v4.20.0
