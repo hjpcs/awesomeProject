@@ -63,6 +63,9 @@ func TestInvokeByName(t *testing.T) {
 	t.Log(reflect.TypeOf(e), unsafe.Pointer(e), e)
 	t.Log(reflect.TypeOf(*e))
 	//按名字获取成员
+	t.Log(reflect.ValueOf(*e))
+	t.Log(reflect.ValueOf(*e).FieldByName("Name").Type())
+	t.Log(reflect.TypeOf(*e).FieldByName("Name"))
 	t.Logf("Name: value(%[1]v), type(%[1]T)", reflect.ValueOf(*e).FieldByName("Name"))
 	if nameField, ok := reflect.TypeOf(*e).FieldByName("Name"); !ok {
 		t.Error("failed to get 'Name' field")

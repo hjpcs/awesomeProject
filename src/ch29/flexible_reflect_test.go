@@ -77,7 +77,8 @@ func fillBySettings(st interface{}, settings map[string]interface{}) error {
 	}
 	//fmt.Println("==", reflect.ValueOf(st))                 //返回的是指针 &{ Mike 30}
 	//fmt.Println("--", (reflect.ValueOf(st)).Elem())        //返回的是值value { Mike 30}
-	//fmt.Println("**", (reflect.ValueOf(st)).Elem().Type()) //返回的是类型type ch29.Employee
+	//fmt.Println("@@", reflect.TypeOf(st))
+	//fmt.Println("**", reflect.ValueOf(st).Elem().Type()) //返回的是类型type ch29.Employee
 	return nil
 }
 
